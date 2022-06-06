@@ -1,10 +1,14 @@
+DROP TABLE IF EXISTS assignments CASCADE;
+DROP TABLE IF EXISTS assignment_submissions CASCADE;
+
+
 CREATE TABLE assignments (
-  id SERIAL PRIMARY KEY NOT NULL,
-  name VARCHAR(255),
-  content TEXT,
-  day INTEGER,
-  chapter INTEGER,
-  duration INTEGER
+id SERIAL PRIMARY KEY NOT NULL,
+name VARCHAR(255),
+content TEXT,
+day INTEGER,
+chapter INTEGER,
+duration INTEGER
 );
 
 CREATE TABLE assignment_submissions (
